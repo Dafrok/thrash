@@ -381,6 +381,24 @@ var shiekah = [
         [1, 3, 1, 0, 1, 0, 1],
         [4, 1, 1, 1, 1, 1, 5]
     ],//9
+    [
+        [2, 1, 1, 3, 0, 0, 3],
+        [1, 0, 0, 1, 0, 0, 1],
+        [1, 0, 0, 1, 0, 0, 1],
+        [1, 0, 0, 1, 0, 0, 1],
+        [1, 0, 0, 1, 0, 0, 1],
+        [1, 0, 0, 1, 0, 0, 1],
+        [4, 0, 0, 4, 1, 1, 5]
+    ],//!
+    [
+        [1, 0, 0, 2, 1, 1, 3],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0],
+        [1, 0, 0, 1, 0, 0, 1],
+        [0, 0, 0, 1, 0, 0, 0],
+        [0, 0, 0, 1, 0, 0, 0],
+        [4, 1, 1, 5, 0, 0, 1]
+    ],//?
 ]
 
 function Point(x, y) {
@@ -444,6 +462,8 @@ function parseText() {
         else if (c >= 48 && c <= 57) word.push(new Letter(c - 48 + 29));
         else if (c == 45) word.push(new Letter(26));
         else if (c == 46) word.push(new Letter(27));
+        else if (c == 33) word.push(new Letter(39));
+        else if (c == 63) word.push(new Letter(40));
         else if (c == 32 || c == 10) {
             if (c == 10) word.push(new Letter(-1));
             letters.push([]);

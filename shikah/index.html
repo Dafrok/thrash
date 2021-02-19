@@ -5,10 +5,11 @@
     edit the text here:<br>
     <textarea id="text-input" rows="3" cols="50">The Legend of Zelda - Breath of the Wild</textarea>
 </div>
-<div id="controls">
-    vertical: <input id="vertical" type="checkbox" /><br>
-    font size: <input id="font-input" type="range" min="0" max="250" value="65" />
-</div>
+<form id="controls">
+    <label>vertical: <input id="vertical" type="checkbox" ></label>
+    <br>
+    <label>font size: <input id="font-input" type="range" min="0" max="250" value="65" pattern="[a-zA-Z0-9\.\-\s\?\!]" ></label>
+</form>
 <div id="popup">
 </div>
 <script src="p5.min.js"></script>
