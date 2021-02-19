@@ -9,6 +9,7 @@ body {
     height: 100%;
     font-size: 18px;
     background-color: #000;
+    background-image: url(bg.png);
     /* background-image: url(https://i.imgur.com/QSg1p4A.png); */
 }
 
